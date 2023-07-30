@@ -1,22 +1,31 @@
 //this is for the intro text
+const introText = document.getElementById('intro-h1');
+const secondText = document.getElementById('second-h1');
+
+
+
+
 setTimeout(() => {
-    const introText = document.getElementById('intro-h1');
-    const secondText = document.getElementById('second-h1');
-   
-    introText.classList.add('fadeOut');
+    
+    introText.classList.remove('hide');
+    introText.classList.add('fadeIn');
 
 
+    
 
-    setTimeout(() => {
-        introText.style.visibility = 'none';
-    }, 2000);
+}, 2000);
+
 setTimeout(() => {
-        
-        introText.classList.remove('fadeOut');
-        secondText.style.visibility = 'visible';
-        secondText.classList.add('fadeIn');
-    }, 1);
-}, 5000);
+    
+    secondText.classList.remove('hide');
+    secondText.classList.add('fadeIn');
+
+
+    
+
+}, 4000);
+
+
 
 
 

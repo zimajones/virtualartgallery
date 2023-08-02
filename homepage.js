@@ -1,15 +1,6 @@
-const navLinks = document.querySelector('.nav-links');
-const closeMenu = document.querySelector('.close-menu');
-const openMenu = document.querySelector('.open-menu');
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+const navbarLinks = document.getElementsByClassName('nav-links')[0];
 
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
-
-function show() {
-    navLinks.style.display = 'flex';
-    navLinks.style.top = '0';
-}
-
-function close() {
-    navLinks.style.top = '-100%';
-}
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+})

@@ -8,20 +8,31 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="homepage.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
     </head>
     <body>
-      <header>
+      <header class="page-header">
         <img class="logo" src="images/zimagallery-logo.svg" alt="gallery-logo">
+        <div class="site-title"><p>Zima's Gallery</p></div>
+        
         <nav>
+          <div class="open-menu"><i class="fa fa-bars"></i></div>
             <ul class="nav-links">
               <li><a href="#">African Art</a></li>
                 <li><a href="#">Constructivism</a></li>
                 <li><a href="#">Modernism</a></li>
-                <li><a href="#">Art Deco</a></li>
+                <li><a href="#">Reniassance</a></li>
+                <div class="close-menu"><i class="fa fa-times"></i></div>
              </ul>
+              
         </nav>
       </header>
+      <section aria-label="newest-photos">
+        <ul>
+          <li class="slide"></li>
+        </ul>
+      </section>
         
-        <script src="" async defer></script>
+        <script src="homepage.js" async defer></script>
     </body>
 </html>

@@ -2,10 +2,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: rgb(245, 245, 245);
 }
 
-li, a, button {
+li, a {
     font-family: sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -20,6 +20,14 @@ header {
     padding: 30px 10%;
 }
 
+.site-title {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
 .nav-links {
     list-style: none;
 }
@@ -27,6 +35,7 @@ header {
 .nav-links li {
     display: inline-block;
     padding: 0px 20px;
+    
 }
 
 .nav-links li a {
@@ -35,4 +44,81 @@ header {
 
 .nav-links li a:hover {
     color:gold
+}
+
+nav .open-menu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .nav-links {
+    font-size: 2rem;
+    
+    cursor: pointer;
+}
+
+nav .close-menu i {
+    display: none;
+}
+
+.logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+@media(max-width: 850px) {
+    nav .nav-links {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        margin: 6px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(245, 245, 245);
+        transition: top 1s ease;
+        display: none;
+        
+    }
+
+    nav .nav-links.open {
+        display: flex;
+        
+    }
+
+    nav .nav-links.open .close-menu {
+       
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: black;
+    }
+
+    nav .nav-links .close-menu i { 
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: black;
+    }
+
+    nav .open-menu {
+        display: block;
+
+    }
+    
+    nav .nav-links li a:hover {
+        background: none;
+        color: blue;
+        font-size: 1.6rem;
+    }
+
+
 }

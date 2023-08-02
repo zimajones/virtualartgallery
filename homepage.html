@@ -34,24 +34,29 @@
               
         </nav>
         <section aria-label="featured-photos">
-          <button class="button-prev">&#60;</button>
-          <button class="button-next">&#62;</button>
-          <div class="carousel">
-            <ul>
-              <li>
-                <img src="images/african-art-1.jpeg" src="african-art-1">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#60;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#62;</button>
+         
+            <ul data-slides>
+              <li class="slide" data-active>
+                <img src="images/african-art-1.jpeg" alt="african-art-1">
               </li>
-              <li>
-                <img src="images/constructivist-art-1.jpeg" src="constructivist-art-1">
+              <li class="slide">
+                <img src="images/constructivist-art-1.jpeg" alt="constructivist-art-1">
               </li>
-              <li>
-                <img src="images/modern-art-1.jpeg" src="modern-art-1">
+              <li class="slide">
+                <img src="images/modern-art-1.jpeg" alt="modern-art-1">
               </li>
-              <li>
-                <img src="images/reniassance-art-1.jpeg" src="reniassance-art-1">
+              <li class="slide">
+                <img src="images/reniassance-art-1.jpeg" alt="reniassance-art-1">
               </li>
             </ul>
-          </div>
+        </div>
+        </section>
+
+        <section>
+          
         </section>
         
         <script src="homepage.js" async defer></script>

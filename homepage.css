@@ -191,12 +191,13 @@ body {
 }
 
 .about-text {
-    background:#87CEEB ;
+    
     grid-area: about;
+    padding: 20px;
 }
 
 .on-display {
-    background: tomato;
+    
     grid-area: ondisplay;
 }
 
@@ -219,4 +220,12 @@ body {
     background: coral;
     grid-area: reniassance;
 
+}
+
+.display-statement-1 {
+    padding-bottom: 20px;
+}
+
+.on-display {
+    padding: 20px;
 }

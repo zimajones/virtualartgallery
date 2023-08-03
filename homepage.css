@@ -29,7 +29,9 @@ body {
 .brand-title {
     display: flex;
     font-size: 1.5rem;
+    font-weight: 400;
     margin: .5rem;
+    padding-left: 20px;
 }
 
 .nav-links ul {
@@ -175,3 +177,46 @@ body {
     right: 1rem;
 }
 
+.homepage-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    width: auto;
+    grid-template-areas: 
+    "about about african african"
+    "about about constructivist constructivist"
+    "ondisplay ondisplay modernism modernism"
+    "ondisplay ondisplay reniassance reniassance";
+}
+
+.about-text {
+    background:#87CEEB ;
+    grid-area: about;
+}
+
+.on-display {
+    background: tomato;
+    grid-area: ondisplay;
+}
+
+.african {
+    background: yellowgreen;
+    grid-area: african;
+}
+
+.constructivist {
+    background: burlywood;
+    grid-area: constructivist;
+}
+
+.modernism{
+    background: palevioletred;
+    grid-area: modernism;
+}
+
+.reniassance {
+    background: coral;
+    grid-area: reniassance;
+
+}

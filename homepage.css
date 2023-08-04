@@ -191,32 +191,41 @@ body {
 }
 
 .about-text {
-    
+    background: #FFFD37;
     grid-area: about;
     padding: 20px;
 }
 
 .on-display {
-    
+    background: #FFFD37;
     grid-area: ondisplay;
 }
 
 .african {
     background: yellowgreen;
     grid-area: african;
+    padding: 20px;
+    
+}
+
+.african li a {
+    text-decoration: none;
 }
 
 .constructivist {
     background: burlywood;
     grid-area: constructivist;
+    padding: 20px;
 }
 
 .modernism{
+    padding: 20px;
     background: palevioletred;
     grid-area: modernism;
 }
 
 .reniassance {
+    padding: 20px;
     background: coral;
     grid-area: reniassance;
 
@@ -228,4 +237,12 @@ body {
 
 .on-display {
     padding: 20px;
+}
+
+.about-bullet {
+    padding: 2px;
+}
+
+.about-list {
+    list-style-image: url('bullet2.gif');
 }

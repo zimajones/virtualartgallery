@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+html {
+    height: 100%;
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgba(238, 23, 26, 0.5), rgba(56, 51, 51, 0.4), rgba(18, 135, 24, 0.5));
+
+    
+}
+
+
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFAFA;
+    color: black;
+}
+
+.brand-title {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .5rem;
+    padding-left: 20px;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+
+}
+
+.nav-links li a  {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    transition: all .3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 12px;
+}
+
+.toggle-button .bar {
+    
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+       display: none;
+        width: 100%;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        text-align: center;
+       
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 20px;
+    color: white
+}
+
+.main-content {
+    display: grid;
+}
+

@@ -4,18 +4,15 @@
     font-weight: 100;
 }
 
-html {
-    height: 100%;
-    
-}
 
 body {
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
-    background-color: red; /* For browsers that do not support gradients */
-    background-image: linear-gradient(rgba(238, 23, 26, 0.5), rgba(56, 51, 51, 0.4), rgba(18, 135, 24, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#FFDD00, #FBB034 );
 
     
 }
@@ -112,6 +109,16 @@ body {
     .nav-links.active {
         display: flex;
     }
+
+    .african-art-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 20px;
+    
+    }
+
+
 }
 
 .title {
@@ -119,11 +126,44 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 60px;
-    padding-top: 20px;
+    padding-top: 30px;
     color: white
 }
 
-.main-content {
-    display: grid;
+.african-art-text {
+    
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
+
+.african-art-text p {
+    
+   margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 8%;
+}
+
+.african-art-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+
+}
+
+.african-art-photos img {
+    padding-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
 

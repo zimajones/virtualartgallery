@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(#83EAF1, #63A4FF );
+
+    
+}
+
+.site-title {
+    text-decoration: none;
+}
+
+
+.navbar-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFAFA;
+    color: black;
+}
+
+.brand-title {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .5rem;
+    padding-left: 20px;
+}
+
+.brand-title p a {
+    text-decoration: none;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+
+}
+
+.nav-links li a  {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+    transition: all .3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: gold;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 12px;
+}
+
+.toggle-button .bar {
+    
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+       display: none;
+        width: 100%;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        text-align: center;
+       
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .reniassance-art-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 20px;
+    
+    }
+
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    padding-top: 30px;
+    color: white
+}
+
+.reniassance-art-text {
+    
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.reniassance-art-text p {
+    
+   margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 8%;
+}
+
+.reniassance-art-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 20px;
+
+}
+
+.reniassance-art-photos img {
+    padding-bottom: 20px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+
